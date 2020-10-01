@@ -1,0 +1,44 @@
+@import "@/styles/variables.scss";
+
+.progress-bar {
+  @include mobile-only {
+    flex: 1 0 100%;
+  }
+
+  &:nth-child(even) {
+    margin-left: 4%;
+
+    @include mobile-only {
+      margin-left: 0;
+    }
+  }
+}
+
+.progress-bar-header {
+  display: flex;
+  justify-content: space-between;
+
+  h4 {
+    color: $black-color;
+  }
+
+  h4:first-child {
+    text-transform: uppercase;
+  }
+}
+
+.progress-bar-externe {
+  height: 25px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: $primary-color;
+
+  @include mobile-only {
+    margin-bottom: 10px;
+  }
+
+  .progress-bar-interne {
+    height: 25px;
+    background-color: $tertiary-color;
+  }
+}

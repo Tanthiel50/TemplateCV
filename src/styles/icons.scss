@@ -1,0 +1,76 @@
+@import "@/styles/variables.scss";
+
+.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.icon-accessibility {
+  background-image: url(../assets/icons/accessibility.svg);
+}
+.icon-airplane {
+  background-image: url(../assets/icons/airplane.svg);
+}
+.icon-book {
+  background-image: url(../assets/icons/book.svg);
+}
+.icon-camera {
+  background-image: url(../assets/icons/camera.svg);
+}
+.icon-circle-down {
+  background-image: url(../assets/icons/circle-down.svg);
+}
+.icon-dice {
+  background-image: url(../assets/icons/dice.svg);
+}
+.icon-envelop {
+  background-image: url(../assets/icons/envelop.svg);
+}
+.icon-facebook {
+  background-image: url(../assets/icons/facebook.svg);
+}
+.icon-folder-upload {
+  background-image: url(../assets/icons/folder-upload.svg);
+}
+.icon-github {
+  background-image: url(../assets/icons/github.svg);
+}
+.icon-home {
+  background-image: url(../assets/icons/home.svg);
+}
+.icon-images {
+  background-image: url(../assets/icons/images.svg);
+}
+.icon-instagram {
+  background-image: url(../assets/icons/instagram.svg);
+}
+.icon-linkedin {
+  background-image: url(../assets/icons/linkedin.svg);
+}
+.icon-music {
+  background-image: url(../assets/icons/music.svg);
+}
+.icon-pacman {
+  background-image: url(../assets/icons/pacman.svg);
+}
+.icon-stats-bars {
+  background-image: url(../assets/icons/stats-bars.svg);
+}
+.icon-twitch {
+  background-image: url(../assets/icons/twitch.svg);
+}
+.icon-twitter {
+  background-image: url(../assets/icons/twitter.svg);
+}
+.icon-user-tie {
+  background-image: url(../assets/icons/user-tie.svg);
+}
+.icon-users {
+  background-image: url(../assets/icons/users.svg);
+}
+.icon-video-camera {
+  background-image: url(../assets/icons/video-camera.svg);
+}

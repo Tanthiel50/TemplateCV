@@ -1,0 +1,46 @@
+@import "@/styles/variables.scss";
+
+.contact-section {
+  padding: 35px 20% 50px 20%;
+  background: $tertiary-color;
+
+  @include tablet-only {
+    padding: 35px 5% 50px 5%;
+  }
+
+  h2 {
+    color: $white-color;
+
+    @include mobile-only {
+      display: none;
+    }
+  }
+
+  .contact-icon {
+    height: 100px;
+    width: 100px;
+    cursor: default;
+
+    @include mobile-only {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .contact-text {
+    color: $secondary-color;
+  }
+
+  .contact-links {
+    margin-top: 20px;
+
+    @include mobile-only {
+      margin-top: 0;
+    }
+
+    h4 {
+      margin-top: 0;
+      color: $white-color;
+    }
+  }
+}
