@@ -1,0 +1,44 @@
+@import "@/styles/variables.scss";
+
+.about-section {
+  background: $tertiary-color;
+
+  @include mobile-only {
+    .section-left-layout {
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    color: $white-color;
+
+    @include mobile-only {
+      display: none;
+    }
+  }
+
+  .about-profile {
+    height: 250px;
+    width: 200px;
+    border: 2px solid $white-color;
+    background-size: auto 100%;
+    background-position: center;
+    background-image: url("../../assets/images/profile.png");
+  }
+
+  .about-text {
+    color: $secondary-color;
+
+    @include mobile-only {
+      text-align: center;
+    }
+  }
+
+  .about-links {
+    display: flex;
+
+    @include mobile-only {
+      justify-content: space-evenly;
+    }
+  }
+}

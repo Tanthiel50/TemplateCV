@@ -1,0 +1,32 @@
+$primary-color: #b5c5d8;
+$secondary-color: #636571;
+$tertiary-color: #181819;
+
+// https://codepen.io/sosuke/pen/Pjoqqp
+
+$filter-primary-color: brightness(0) saturate(100%) invert(87%) sepia(89%)
+  saturate(845%) hue-rotate(178deg) brightness(89%) contrast(88%);
+
+$filter-secondary-color: brightness(0) saturate(100%) invert(37%) sepia(9%)
+  saturate(500%) hue-rotate(194deg) brightness(102%) contrast(90%);
+
+$black-color: #000000;
+$white-color: #ffffff;
+
+// Variables pour le responsive
+$breakpoints: (
+  tablet: 1023px,
+  mobile: 674px,
+);
+
+@mixin tablet-only {
+  @media screen and (max-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}

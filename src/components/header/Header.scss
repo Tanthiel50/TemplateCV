@@ -1,0 +1,56 @@
+@import "@/styles/variables.scss";
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50px;
+  width: 100%;
+
+  &.with-background {
+    background: $black-color;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  @include tablet-only {
+    justify-content: space-evenly;
+  }
+
+  div {
+    margin: 0 2%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white-color;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include tablet-only {
+      display: none;
+    }
+
+    &.active,
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .nav-icon {
+    display: none;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+
+    @include tablet-only {
+      display: block;
+    }
+  }
+}

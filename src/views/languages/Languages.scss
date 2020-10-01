@@ -1,0 +1,9 @@
+@import "@/styles/variables.scss";
+
+.languages-section {
+  padding: 0 20% 35px 20%;
+
+  @include tablet-only {
+    padding: 0 5% 35px 5%;
+  }
+}
